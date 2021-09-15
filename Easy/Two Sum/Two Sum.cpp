@@ -1,5 +1,5 @@
 //Link to the puzzle: https://leetcode.com/problems/two-sum/
-class Solution {
+class Solution 
 public:
     vector<int> twoSum(const vector<int>& numbers, const int& target) {
         unordered_map<int, int> m; //Number in 'numbers' <-> its index;
