@@ -8,15 +8,14 @@ public:
         for (int i = 0; i < numbers.size(); ++i) {
             auto findDifference = m.find(target - numbers[i]);
             
-              //If the difference of target sum and current number is present as a key in map, return indices: {index of cur number in array, index of found difference};
-            if (findDifference != m.end()) {
+             //If the difference of target sum and current number is present as a key in map, return indices: {index of cur number in array, index of found difference};
+            if (findDifference != m.end())
                 return {i, findDifference->second};
-            }
             
             //Else create pair of current number and its index;
-            else {
+            else 
                 m[numbers[i]] = i;
-            }
+            
         }
         
         //If nothing was found - return pairs of 0 indices {0, 0};
