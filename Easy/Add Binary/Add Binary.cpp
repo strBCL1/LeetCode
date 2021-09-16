@@ -1,3 +1,4 @@
+//Link to the puzzle: https://leetcode.com/problems/add-binary
 class Solution {
 public:
     string answer = ""; //String to store the answer of puzzle;
