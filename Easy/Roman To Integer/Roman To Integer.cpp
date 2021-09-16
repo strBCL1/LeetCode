@@ -20,7 +20,7 @@ public:
         
         //From right to left:
         for (int i = s.size() - 1; i >= 0; --i) {
-            //If value of current character is lesser than value of previous character (to the right) --> subtract value of current character from sum (IX = 9, XI = 11);
+            //If value of current character is lesser than value of previous character (to the right) --> subtract value of current character from sum (IX = 10 - 1 = 9, XI = 10 + 1 = 11);
             //Else add current character value to sum;
             sum += (romValue(s[i]) < romValue(s[i+1]) && s[i+1] != '\0') ? -romValue(s[i]) : romValue(s[i]);
         }
